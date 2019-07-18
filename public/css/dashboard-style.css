@@ -1,0 +1,82 @@
+#dashboard .card{
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+}
+.dashboard-wrapper
+{
+    padding: 0 1rem;
+}
+.dashboard-top-row-parent{
+    display: table;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.8rem;
+    border-radius: 8%;
+}
+.dashboard-top-row-child{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffffeb;
+}
+.dis-inline-block
+{
+    display:inline-block;
+    vertical-align: middle;
+}
+.dis-inline-block h5, .dis-inline-block small
+{
+    margin: 0 0 0 0.3rem !important;
+}
+.card-content h5
+{
+    margin-bottom: 0 !important;
+}
+#dashboard{
+    position: relative;
+    animation: slide-up 0.3s;
+}
+.chartjs-loader-wrapper
+{
+    position: relative;
+}
+.chartjs-loader
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+.dashboard-card-parent {
+    display: table;
+}
+.dashboard-card-child{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.dashboard-card-small-details
+{
+    font-size: 80%;
+    line-height: 1.2;
+    margin-top: 0.4rem;
+}
+.chart-height
+{
+    min-height: 405px;
+}
+@keyframes slide-up {
+    0% {
+        top: 60rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
+@media (max-width: 600px)
+{
+    #dashboard .card {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fefefe;
+  color: #999999;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$white: #ffffff;
+$blue-approx: #f2feff;
+$gray-approx: #888888;
+$alto-approx: #e0e0e0;
+$primary: #f2feff;
+$silver-color: #cccccc;
+$hover-color: #525252;
+$global-radius: 5px;
+
+$line-width: 2px;
+$line-color: $alto-approx;
+$default-dote-color: $line-color;
+$timeline-color: $white;
+$timeline-transition: all 0.25s ease-in;
+$timeline-item-card-bg: $white;
+$timeline-item-font-color: $gray-approx;
+$timeline-item-card-radius: $global-radius;
+$timeline-icon-color: $silver-color;
+$timeline-media-date-color: $silver-color;
+$timeline-icon-bg: $timeline-color;
+$timeline-content-arrow-color: $white;
+$timeline-icon-size: 50px;
+$content-title-avatar-size: 56px;
+
+//Browser supported mixin variable
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+.text-muted {
+  color: #b5b5b5 !important;
+}
+
+.doc-page-header {
+  min-height: 130px;
+  color:$white;
+  background: url(../imgs/banner-bg.png) no-repeat;
+  background-size: cover;
+
+  .container-fluid {
+    text-align: center;
+    padding-top: 30px;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.doc-container {
+
+  @include transition($timeline-transition);
+
+  .nav.flex-column {
+    margin-top: 25px;
+
+    .nav-link {
+      padding: .2rem 1rem;
+      color: inherit;
+    }
+
+    .nav-link:hover,
+    .nav-link:active,
+    .nav-link:focus,
+    .nav-link.active {
+      color: $hover-color;
+    }
+
+    .sub-list-link-group {
+      list-style: none;
+      padding-left: 30px;
+
+      a {
+        display: block;
+        padding: 2px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+
+  .doc-left-menus-panel {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: calc(100vh - 250px);
+  }
+
+  .doc-content-item {
+    padding-top: 25px;
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    pre {
+      background: $white;
+      padding: 20px;
+      box-shadow: 1px 1px 20px 1px #0000002b;
+      border-radius: 3px;
+    }
+
+    .line code {
+      box-shadow: none;
+    }
+  }
+
+  .common-class-container {
+    code {
+      margin: 0 15px 15px 0;
+      display: inline-block;
+    }
+
+    .example-code {
+      line-height: 20px;
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .item-diver {
+      padding-top: 30px;
+    }
+  }
+
+  .greeting-content {
+    font-size: 24px;
+  }
+
+  //One click select all code
+  code, table td.code {
+    -webkit-user-select: all;  /* Chrome all / Safari all */
+    -moz-user-select: all;     /* Firefox all */
+    -ms-user-select: all;      /* IE 10+ */
+    user-select: all;          /* Likely future */
+  }
+
+  .see-less {
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .see-more {
+    height: auto;
+    overflow: auto;
+  }
+
+  .see-more-or-less-container {
+    margin-bottom: 20px;
+  }
+
+  .note {
+    margin: 1rem 0;
+  }
+
+  //Hide syntaxhighlighter tooltip
+  .syntaxhighlighter {
+    margin-bottom: 0 !important;
+
+    .toolbar {
+      display: none !important;
+    }
+  }
+
+
+  .table-responsive {
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 3px;
+
+    .table {
+        th, td {
+          border: none;
+
+          .option-item {
+            -webkit-user-select: all;
+            -moz-user-select: all;
+            -ms-user-select: all;
+            user-select: all;
+          }
+
+          .setting-doc-example {
+            margin-left: 20px;
+          }
+        }
+
+      tbody tr:nth-of-type(odd) {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .doc-page-header {
+    h1 {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  .doc-left-menus-panel {
+    display: none;
+  }
+}

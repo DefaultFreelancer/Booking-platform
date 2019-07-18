@@ -1,0 +1,337 @@
+/*body{*/
+    /*background-color: #fbfbfb !important;*/
+/*}*/
+.calendar-wrapper
+{
+
+}
+.calender-month
+{
+    font-size: 1.64rem;
+}
+
+.month-text{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 25%;
+}
+.change-mon-btn
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.change-mon-btn i
+{
+    vertical-align: text-top;
+}
+
+.calendar-week-row,.calendar-date-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.calendar-week-col, .calendar-date-col
+{
+    width: 14.278%;
+    height: 4rem;
+    border-top: 1px solid #ebedf2;
+    border-left: 1px solid #ebedf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar-date-col
+{
+    height: 9.9rem;
+}
+.calendar-date-clickable
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.calendar-date
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.last-row-border
+{
+    border-bottom: 1px solid #ebedf2;
+}
+.last-col-border
+{
+    border-right: 1px solid #eaecf1;
+}
+.hover-animate{
+    width: 100%;
+    height: 100%;
+    background: #525461;
+    transform: scale(0,0);
+    transition: all .3s ease-in-out;
+}
+
+div.calendar-date-col:last-of-type
+{
+    border-right: 1px solid #efefef;
+}
+.event-details
+{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.today-date{
+    color: #4a97fd !important;
+}
+
+.calendar-day
+{
+    display: none;
+    height: 2.5rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calendar-date-clickable.modal-trigger:not(.isDisabled):hover .calendar-date, .calendar-date-clickable.modal-trigger:not(.isDisabled):hover .event-details .calendar-date-clickable.modal-trigger:not(.isDisabled):hover .today-date
+{
+    color: #FFFFFF !important;
+    transition: all .3s ease-in-out;
+}
+
+.calendar-date-clickable:hover .hover-animate ,.calendar-date-clickable:focus .hover-animate , .calendar-date-clickable:active .hover-animate
+{
+    transform: scale(1,1);
+}
+.calendar-date-clickable:focus .hover-animate, .calendar-date-clickable:active .hover-animate
+{
+    transform: scale(0,0);
+}
+.calendar-date-clickable.modal-trigger:not(.isDisabled):focus .today-date, .calendar-date-clickable.modal-trigger:not(.isDisabled):active .today-date
+.calendar-date-clickable.modal-trigger:not(.isDisabled):focus .calendar-date, .calendar-date-clickable.modal-trigger:not(.isDisabled):active .calendar-date
+{
+    color: #535561 !important;
+}
+.modal-trigger:focus .calendar-date-col {
+    background: #4a97fd;
+}
+/*.modal-trigger:focus div.calendar-date, .modal-trigger:focus div.calendar-day, .modal-trigger:focus div.event-details {*/
+    /*color: #FFFFFF !important;*/
+/*}*/
+.isDisabled,.disabledDates
+{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.isDisabled{
+    background-color: #f7f7f7 !important;
+}
+.isHoliday{
+    background-color: #f7f7f7 !important;
+    cursor: default;
+}
+.holiday-results
+{
+    color: #fff !important;
+    margin-bottom: 0.2rem;
+    background-color: #535561;
+    padding: 0 0.2rem;
+}
+.holiday-results:last-of-type
+{
+    margin-bottom: 0;
+}
+.holiday-results:hover
+{
+    background-color: #2bbbad !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.disabledDates{
+    background-color: #bfbfbf !important;
+    color: #bfbfbf !important;
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .calendar-date-col
+    {
+        height: 17rem;
+        width: 33.278%;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .month-text{
+        width: 30%;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-row
+    {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+    .calendar-date-col
+    {
+        height: 20rem;
+        width: 33.278%;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .month-text{
+        width: 30%;
+    }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px)  {
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-row
+    {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .calendar-date-col
+    {
+        height: 14rem;
+        width: 33.278%;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .month-text{
+        width: 35%;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 320px) {
+    .calendar-week-row
+    {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-col
+    {
+        border-top: 1px solid #efefef;
+        border-right: 1px solid #efefef;
+        width: 100%;
+        height: 18.7rem;
+        margin:0 auto !important;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .month-text{
+        width: 75%;
+    }
+
+}
+@media (min-width:280px) and (max-width: 332px)
+{
+    .month-text
+    {
+        font-size: 1.5rem;
+    }
+    .calendar-month i
+    {
+        vertical-align: text-top;
+    }
+}

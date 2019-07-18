@@ -1,0 +1,315 @@
+.auth-modal {
+    height: 100%;
+    border-radius: 0 !important;
+    background: rgba(255, 255, 255, 1);
+
+}
+.home-contents
+{
+    position: absolute;
+    top: 10%;
+}
+.calendar-week-wrapper{
+    margin-bottom: 2rem;
+}
+.calendar-view-date{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: #ffffff;
+}
+.calendar-view-date:hover{
+    cursor:pointer;
+    box-shadow: 0 0 15px 4px rgba(73, 149, 251, 0.52);
+    transition: box-shadow 0.3s;
+}
+.calendar-week-names{
+    padding: 0.2rem 0;
+    background-color: #4a97fd;
+    font-size: 1.1rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.calendar-date-month{
+    position: relative;
+    top: -0.15rem;
+    color: #757575;
+}
+.calendar-date-single{
+    font-size: 2rem;
+    margin-top: 0.2rem
+}
+.calendar-month-single{
+    position: inherit;
+    top: -0.6rem;
+    font-size: 0.8rem;
+}
+.week-change-buttons{
+    margin: auto;
+    display:inline-block;
+    vertical-align: middle;
+}
+.week-change-buttons-mobile{
+    display: table;
+    width: 24rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.week-change-buttons-mobile a{
+    display: table-cell;
+    width: 14%;
+}
+.week-change-buttons-mobile div{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+.disabledDates .calendar-week-names
+{
+    background: #4a97fdbf;
+}
+.service-list,.service-choose,.sign-in,.sign-up{
+    border: 0.12rem solid #fff;
+    border-radius:5px;
+    color:#fff;
+    padding: 1rem;
+}
+.sign-up{
+    margin-left: 1rem;
+}
+.calendar-view-date-mobile{
+    padding: 1rem;
+    border: 0.1rem solid #ffffff;
+    display: block;
+    color: white;
+    width: 24rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+.service-list{
+    width:30rem;
+    margin:0 auto 1rem;
+}
+.sign-in,.sign-up{
+    padding: 0.6rem 1rem;
+}
+
+.service-list:hover, .service-choose:hover, .sign-in:hover, .sign-up:hover{
+    cursor:pointer;
+    background: #fff;
+    color: #4a97fd;
+    transition: color,background 0.3s;
+}
+.service-header{
+    padding: 1rem;
+    margin:0 auto;
+    color: #fff;
+}
+.service-choose{
+    width: 3.5rem;
+    margin: 3rem auto;
+    padding: 0.3rem 0;
+}
+.service-choose i{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.service-details-wrapper{
+    margin:8rem 0 3rem;
+}
+.nav-bar-home-page{
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.home-background{
+    background-image: url(../images/background/background-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+div.home-background::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.7);
+}
+.welcome-message-wrapper{
+    margin: 8rem 0 0;
+}
+.welcome-message-description-landingPage{
+    margin-bottom: 4rem;
+}
+.welcome-message,.selected-service-title{
+    font-size: 4.65rem;
+    margin: 1rem 0;
+}
+
+.date-changer{
+    color: #ffffff;
+    font-size: 3.5rem;
+}
+.date-changer:hover{
+    cursor: pointer;
+    color: #4a97fd;
+}
+.isDisabled .date-changer
+{
+    color: #909090;
+}
+.isDisabled-arrow{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.isDisabled-arrow i {
+    color: #909090;
+}
+.week-change-buttons-mobile .isDisabled-arrow .date-changer
+{
+    border: 0.12rem solid #909090;
+}
+.removed {
+    animation: disappear 0.5s;
+    animation-fill-mode:forwards;
+}
+.shown{
+    animation: appear 0.5s;
+    animation-fill-mode:forwards;
+}
+.show-new-date{
+    animation: date-appear 0.3s;
+    animation-fill-mode:forwards;
+}
+.calendar-view-date-mobile.disabledDates
+{
+    background-color: #b1b1b18c !important;
+    color: #c1c1c1 !important;
+}
+.calendar-week-wrapper-mobile{
+    margin: 3rem 0 0 0;
+}
+.calendar-view-date-mobile:hover{
+    background:#fff;
+    color:#4a97fd;
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        height: auto;
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+        height: 0px;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        height: 0px;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        height: auto;
+    }
+}
+@keyframes date-appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media  {
+
+}
+@media only screen and (min-width: 1180px) and (max-width:1080px)
+{
+    .row .col.offset-xl2 {
+        margin-left: 10.666667% !important;
+    }
+    .row .col.xl8 {
+        width: 72.666667% !important;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1009px)
+{
+    .date-changer {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 992px){
+    .welcome-message,.selected-service-title{
+        font-size: 4rem;
+    }
+    .date-changer{
+        border: 0.12rem solid #fff;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        vertical-align: middle;
+        padding: 0.5rem;
+    }
+    .date-changer:hover{
+        background: #fff;
+    }
+    .isDisabled .date-changer{
+        background:#b1b1b18c;
+    }
+}
+@media only screen and (max-width: 600px){
+    .service-list{
+        width: 20rem;
+    }
+    .welcome-message,.selected-service-title{
+        font-size: 2rem;
+    }
+    .welcome-message-wrapper,.service-details-wrapper{
+        margin: 2rem 0 0.5rem;
+    }
+    .nav-bar-home-page {
+        padding: 20px 0.1rem 0;
+    }
+    .sign-in, .sign-up{
+        padding: 0.3rem 0.5rem;
+    }
+    .calendar-view-date-mobile, .week-change-buttons-mobile {
+        width: 20rem;
+    }
+    .content-child {
+        padding: 0rem 1rem;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .booking-form-wrapper{
+        margin: 0 10%;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .booking-form-wrapper{
+        margin: 0 20%;
+    }
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!--Import font from google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!--Code hightlight-->
+    <link type="text/css" rel="stylesheet" href="./css/shCore.css" />
+    <link type="text/css" rel="stylesheet" href="./css/shThemeDefault.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico"/>
+
+</head>
+
+<body>
+    <div class="d-none" id="top"></div>
+    <header class="doc-page-header">
+        <div class="container-fluid">
+            <h1> Gain Booking </h1>
+        </div>
+    </header>
+    <div class="container-fluid doc-container">
+
+        <div class="row flex-xl-nowrap">
+            <!--Doc left menus panel-->
+            <div class="col-12 col-md-3 col-xl-2 doc-left-menus-panel">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  js-page-scrolling" href="#installation">Installation</a>
+                        <ul class="sub-list-link-group">
+                            <li>
+                                <a href="#installation" class="js-page-scrolling">Server requirements</a>
+                            </li>
+                            <li>
+                                <a href="#howToInstall" class="js-page-scrolling">How to install</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#quickStartGuide">Quick start guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#hoeToUse"> How to use </a>
+                        <ul class="sub-list-link-group">
+                            <li>
+                                <a href="#appSetting" class="js-page-scrolling"> Application settings </a>
+                            </li>
+                            <li>
+                                <a href="#emailSetting" class="js-page-scrolling"> Email settings </a>
+                            </li>
+                            <li>
+                                <a href="#workingDays" class="js-page-scrolling"> Working days </a>
+                            </li>
+                            <li>
+                                <a href="#clientPermissions" class="js-page-scrolling"> Client permissions </a>
+                            </li>
+                            <li>
+                                <a href="#userPermissions" class="js-page-scrolling"> User permissions </a>
+                            </li>
+                            <li>
+                                <a href="#paymentMethod" class="js-page-scrolling"> Payment methods </a>
+                            </li>
+                            <li>
+                                <a href="#service" class="js-page-scrolling"> Services </a>
+                            </li>
+                            <li>
+                                <a href="#booking" class="js-page-scrolling"> Bookings </a>
+                            </li>
+                            <li>
+                                <a href="#report" class="js-page-scrolling"> Reports </a>
+                            </li>
+                            <li>
+                                <a href="#clients" class="js-page-scrolling"> Clients </a>
+                            </li>
+                            <li>
+                                <a href="#dashboard" class="js-page-scrolling"> Dashboard </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#nestedTabs"> Nested tabs </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#language"> Language </a>
+                        <ul class="sub-list-link-group">
+                            <li>
+                                <a href="#addNewLangu" class="js-page-scrolling"> Add new language </a>
+                            </li>
+                            <li>
+                                <a href="#updateLangu" class="js-page-scrolling"> Update language </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#upgrade"> How to upgrade </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-page-scrolling" href="#top"> Back to top </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Doc main content panel-->
+            <main class="col-12 col-md-9 col-xl-8" role="main">
+                <div class="doc-content-item" id="introduction">
+                    <h3 class="bd-title">Introduction</h3>
+
+                    <div class="clearfix">
+                        <p> Gain Booking is a web application where people can easily book different services from online. You can add multiple hourly or daily services.
+                            The user interface makes the booking process easier. It helps visitors to book their desired services in minutes.</p>
+                        <p> Gain Booking is developed with Laravel, Vue.js & MySQL database. It's easy to install. </p>
+                    </div>
+
+                </div>
+                <div class="doc-content-item" id="installation">
+                    <h3 class="bd-title"> Installation </h3>
+                    <h5 class="bd-subtitle">Server requirements </h5>
+                    <ul>
+                        <li>  PHP >= 7.1.3</li>
+                        <li>  OpenSSL PHP Extension</li>
+                        <li>  PDO PHP Extension</li>
+                        <li>  Mbstring PHP Extension</li>
+                        <li>  Tokenizer PHP Extension</li>
+                        <li>  XML PHP Extension</li>
+                        <li>  Ctype PHP Extension</li>
+                        <li>  JSON PHP Extension</li>
+                        <li>  ZIP PHP Extension</li>
+                        <li>  BCMath PHP Extension</li>
+                    </ul>
+                </div>
+                <div class="doc-content-item" id="howToInstall">
+                    <h5 class="bd-subtitle"> How to install </h5>
+                    <ol>
+                        <li>
+                            Upload the file to your server which you have downloaded from CodeCanyon.
+                        </li>
+                        <li>
+                            Create the database and remember these things for future usage.
+                            <ul>
+                                <li>  database name</li>
+                                <li>  username</li>
+                                <li>  password</li>
+                            </ul>
+                        </li>
+                        <li>
+                           Go to URL "yourdomain/install". Follow the easy installer procedures step by step and install the application.
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="doc-content-item" id="quickStartGuide">
+                    <h3 class="bd-title">Quick start guide</h3>
+
+                    <div class="clearfix">
+                        <p> Please log in to the admin panel. Configure  <a href="#appSetting" class="js-page-scrolling"> Application settings</a>, <a href="#emailSetting" class="js-page-scrolling"> Email settings</a> and <a href="#paymentMethod" class="js-page-scrolling"> Payment methods</a>.</p>
+                        <p> Add your <a href="#service" class="js-page-scrolling"> Services</a> with your preffered option.</p>
+                        <span> Now go back to your landing page and your services should be ready for booking. </span>
+                    </div>
+
+                </div>
+                <div class="doc-content-item" id="hoeToUse">
+                    <h3 class="bd-title"> How to use </h3>
+
+
+                    <!--Application setting-->
+                    <div class="item-diver" id="appSetting"></div>
+                    <h5 class="bd-subtitle"> Application settings </h5>
+                    <ul>
+                        <p> 1. Please go to "Settings">"Application Settings".</p>
+                        <p> Now configure all the setting as your application required.</p>
+                        <img src="./imgs/appSetting.png" width="100%">
+                    </ul> <br>
+
+                    <!--Email Setting-->
+                    <div class="item-diver" id="emailSetting"></div>
+                    <h5 class="bd-subtitle"> Email settings </h5>
+                    <ol>
+                        <p>Please configure the email setting before using this application. If this setting gets any configuration error, mail might not be sent to the clients.</p>
+                        <p> At first, go to "Settings">"Email".</p>
+                        <p> If you want to add your server email for this configuration then select "Send mail" from "Email driver". You can also choose "SMTP", if you want to add other email provider's service.</p>
+                        <p> You can also check if the setting is working or not by giving a mail address in the "Test mail" while saving the changes.</p>
+                        <p> Set email sent from name as your choice.</p>
+
+                        <p> Set your Email address as email. [N.B: Grant permission to access your email for this application, if needed.(example: For Gmail - Allow less secure apps: 'ON')].</p>
+
+                        <p> Select email driver. If smtp:-</p>
+                        <ul>
+                            <p> Type email host name.[ example : for gmail, smtp.gmail.com ]</p>
+
+                            <p> Type the port number :- [ example : for gmail, port 587 ]</p>
+
+                            <p> Type password :- password of that email with is used as the email address.</p>
+
+                            <p> Select Encryption type :- Port 465 (SSL required), Port 587 (TLS required).</p>
+
+                        </ul>
+
+                        <img src="./imgs/emailSetting.png" width="100%">
+                    </ol>
+
+                    <!--Working Days-->
+                    <div class="item-diver" id="workingDays"></div>
+                    <h5 class="bd-subtitle"> Working days</h5>
+                    <ul>
+                        <p> 1. Go to "Settings">"Off Day". Select the off days and save the changes. The unchecked days will be your default working days.</p>
+                        <p> 2. Go to "Settings">"Holidays">"Add". You can set holidays from the calendar. In the holidays clients will not be able to add bookings.</p>
+                        <p>Set off days</p>
+                        <img src="./imgs/workingDays.png" width="100%">
+                        <p>Add holidays</p>
+                        <img src="./imgs/holiday.png" width="100%">
+                    </ul>
+
+                    <div class="item-diver" id="clientPermissions"></div>
+                    <h5 class="bd-subtitle"> Client permissions </h5>
+                    <ul>
+                        <p> 1. You can set clients permission.</p>
+                        <p> Go to "Settings">"Client". If "Client can signup" and "Client can login" is checked, then clients will able to signup and login to their account.</p>
+
+                        <p> If you want to get booking only from registered clients, then check "Client can submit booking only after login" and save the changes.</p>
+
+                        <img src="./imgs/clientPermission.png" width="100%">
+                    </ul>
+
+                    <!--User Permision-->
+                    <div class="item-diver" id="userPermissions"></div>
+                    <h5 class="bd-subtitle"> User permissions </h5>
+                    <ul>
+                        <p> 1. You can add roles to the users.</p>
+                        <p> Go to "Settings">"Roles">"Add". Then add role by giving permissions. </p>
+                        <p> 2. Assign the role to any user by inviting through email.</p>
+                        <p> Go to "Settings">"Users">"Add". Then invite a user by typing the email address and selecting the role. The invited user will get an confirmation email & all the permissions are given in the role.</p>
+
+                        <p>Add a new role</p>
+                        <img src="./imgs/roleSet.png" width="100%"></li><br><br>
+                        <p>Invite a new user</p>
+                        <img src="./imgs/inviteUser.png" width="100%">
+
+                    </ul>
+
+                    <!--Payment Methods-->
+                    <div class="item-diver" id="paymentMethod"></div>
+                    <h5 class="bd-subtitle"> Payment methods </h5>
+                    <ul>
+                        <p> 1. We are providing "Stripe" payment gateway in the system. If you want to receive the booking bill through "Stripe", then you can enable this method.</p>
+                        <p> Go to "Settings">"Payment Methods">"Edit" option of Stripe.</p>
+                        <p> Change "Status" to "Enable" and "Available to client" to "Yes". Provide "Publishable key" and "Secret key" of your stripe account then save the changes.</p>
+
+                        <p> 2. To add a new payment method, go to "Settings">"Payment Methods">"Add". Provide the "Title", Change "Status" to "Enable" and "Available to client" to "Yes". Functionalities are same as Stripe.</p>
+
+                        <p> If the new method is not available to client but still enabled, you can use this method to change the payment status of individual booking through your admin panel.</p>
+
+                        <p>Add a new payment method</p>
+                        <img src="./imgs/paymentMethod.png" width="100%">
+
+                    </ul>
+
+                    <!--Service-->
+                    <div class="item-diver" id="service"></div>
+                    <h5 class="bd-subtitle"> Services </h5>
+                    <ul>
+                        <p> 1. Some demo services are given to the system. You can deactivate these services.</p>
+                        <p> Go to "Services">"Setting" option of service. Change "Active" to "No".</p>
+                        <p> 2. You can add or edit services.(Services can be added in two types, Hourly service and Daily service.)</p>
+
+                        <p> To add, go to "Services">"Add". Fill the fields up. Save the changes.</p>
+                        <p> To edit, go to "Services">"Edit" option of the service. Make changes. Save the changes.</p>
+                        <p>Add a new service</p>
+                        <img src="./imgs/service.png" width="100%">
+                    </ul>
+
+                    <!--Booking-->
+                    <div class="item-diver" id="booking"></div>
+                    <h5 class="bd-subtitle"> Bookings </h5>
+                    <ul>
+                        <p> 1. You can also book a service for your clients.</p>
+                        <p> Go to "Bookings">"Add". Then select a service and date, follow all the procedures to book the service.</p>
+                        <p> 2. You can confirm or cancel the pending bookings.</p>
+                        <p> Go to "Bookings". You can see bookings that already being submitted. To confirm these bookings, hover over the action column, select the "Confirm" button. To cancel any specific booking, select the "Cancel".</p>
+
+                        <p> 3. To see the booking details. Select the link of "Booking ID".</p>
+
+                        <p>Add a Booking</p>
+                        <img src="./imgs/addBoking.png" width="100%">
+                        <br>
+                        <br>
+
+                        <p>Confirm a Booking</p>
+                        <img src="./imgs/confirmBooking.png" width="100%">
+                        <br>
+                        <br>
+                        <p>Booking details</p>
+                        <img src="./imgs/bookingDetails.png" width="100%">
+                    </ul>
+
+                    <!--Report-->
+                    <div class="item-diver" id="report"></div>
+                    <h5 class="bd-subtitle"> Reports </h5>
+                    <ul>
+                        <p> 1. You can see the report of the bookings on individual service on an specific date.</p>
+
+                        <p> Go to "Reports", select desired "Service", then choose a "Date".</p>
+
+                        <img src="./imgs/report.png" width="100%">
+
+                    </ul>
+
+                    <!--clients-->
+                    <div class="item-diver" id="clients"></div>
+                    <h5 class="bd-subtitle"> Clients </h5>
+                    <ul>
+                        <p> 1. You can check clients to see all the clients listed.</p>
+                        <p> 2. You can search any client by their name, email or phone number</p>
+
+                        <img src="./imgs/clients.png" width="100%">
+                    </ul>
+
+                    <!--Dashboard-->
+                    <div class="item-diver" id="dashboard"></div>
+                    <h5 class="bd-subtitle"> Dashboard </h5>
+                    <ul>
+                        <p> You can see dashboard to check all booking status based on below categories:.</p>
+                        <p> 1. Total bookings and Confirmed bookings for next 30 days.</p>
+                        <p> 2. Today's total and pending bookings</p>
+                        <p> 3. Booking overview through out the year in the graph</p>
+                        <p> 4. Booking Status in percentage based on confirmed booking and pending booking in the graph</p>
+                        <p> 5. This months, Last months and Till now total bookings</p>
+                        <img src="./imgs/dashboard.png" width="100%">
+                    </ul>
+
+                </div>
+
+                <!--Language-->
+                <div class="doc-content-item" id="language">
+                    <h3 class="bd-title mb-3"> Language </h3>
+                    <div class="item-diver" id="addNewLangu"></div>
+                        <h5 class="bd-subtitle"> Add new language </h5>
+                        <ol>
+                            <li>
+                                Go to "resources/lang" directory of the project.
+                            </li>
+                            <li>
+                                Add a new directory named on your new language.
+                            </li>
+                            <li>
+                                Copy all the files from "resources/lang/english" directory.
+                            </li>
+                            <li>
+                                Change "resources/lang/your-new-language-name/default.php" file. Just make the changes to the right sided text in your language.
+                                Suppose, you are adding a new language "Portuguese" in this app. So add a new directory named "portuguese" in "resources/lang". Copy all files from "resources/lang/english" directory to "resources/lang/portuguese".
+                                Then change the "default.php" file in this directory. There can be translations from English (such as, "add"=>"Add"). You should change this to portuguese (such as, "add" => "Adicionar").
+                            </li>
+                        </ol>
+
+
+                    <div class="item-diver" id="updateLangu"></div>
+                        <h5 class="bd-subtitle"> Update language </h5>
+                        <ol>
+                            <li>
+                                Go to "Settings">"Application Settings".
+                            </li>
+                            <li>
+                                Select your preferred language from "Language Settings" section. Save the changes.
+                            </li>
+                            <li>
+                                If you would like to change any language, please copy the text from default.php to custom.php.
+                            </li>
+                            <li>
+                                Please note, we may replace all other files except the custom.php in future updates.
+                            </li>
+                            <li>
+                                After changing any text, please remember to clear cache from the Settings>Application settings by loing as admin.
+                            </li>
+                        </ol>
+                </div>
+
+                <div class="doc-content-item mb-3" id="upgrade">
+                    <h3 class="bd-title"> How to upgrade </h3>
+                    <ol>
+                        <li>
+                            Go to "Settings">"Updates".
+                        </li>
+                        <li>
+                            You can see the current version of your application as well as the new versions (if any new upgradable version is available).
+                        </li>
+                        <li>
+                            Just click the new version to upgrade your application.
+                        </li>
+                    </ol>
+                </div>
+                <!--Demo -->
+
+               <div class="doc-content-item greeting-content mb-5 pt-0">
+                   Thank you for using Gain Booking!<br>
+                   For any kind of help or support, feel free to contact by visiting our profile page.
+               </div>
+
+            </main>
+
+            <!--Right blank panel-->
+            <div class="d-xl-block col-xl-2"></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src='js/shCore.js' type='text/javascript'></script>
+    <script src='js/shAutoloader.js' type='text/javascript'></script>
+    <script src='js/shBrushXml.js' type='text/javascript'></script>
+    <script src='js/shBrushJScript.js' type='text/javascript'></script>
+    <script src='js/shBrushCss.js' type='text/javascript'></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+
+        $(document).ready(function () {
+
+            //Page animation
+            $(".js-page-scrolling").click(function (e) {
+                var $elementTarget = $(e.target),
+                    $scrollingTarget = $($elementTarget.attr("href")),
+                    scrollingPosition = 0;
+
+
+
+                if ($scrollingTarget !== "#top") scrollingPosition = $scrollingTarget.offset().top;
+                else return false;
+
+                $("html, body").animate({ scrollTop: scrollingPosition }, 500);
+            });
+
+            //See more data
+            $(".js-see-more-less").click(function (e) {
+                var $selector = $(e.target),
+                    $target = $selector.closest(".js-see-more-parent").find(".js-class-container");
+
+                if ($target.hasClass("see-less")) {
+                    $target.addClass("see-more").removeClass("see-less");
+                    $selector.html("See less");
+                } else {
+                    $target.addClass("see-less").removeClass("see-more");
+                    $selector.html("See more");
+                }
+
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>
