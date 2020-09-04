@@ -24,6 +24,6 @@
         "chart.js": "^2.7.2",
         "timepicker": "^1.11.12",
         "vue-chartjs": "^3.3.2",
-        "vue-moment": "^3.2.0"
+        "vue-moment": "^4.1.0"
     }
 }
